@@ -1,0 +1,49 @@
+# Project: Basic Graphics
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = src/Lab1/dda.o src/Lab1/bla.o src/main.o src/Lab2/mpc.o src/Lab2/mpe.o src/Lab2/concentric_circle.o src/Lab2/concentric_ellipse.o src/Extras/fourier.o
+LINKOBJ  = src/Lab1/dda.o src/Lab1/bla.o src/main.o src/Lab2/mpc.o src/Lab2/mpe.o src/Lab2/concentric_circle.o src/Lab2/concentric_ellipse.o src/Extras/fourier.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -lbgi -lgdi32 -luser32 -m32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = "Basic Graphics.exe"
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+src/Lab1/dda.o: src/Lab1/dda.cpp
+	$(CPP) -c src/Lab1/dda.cpp -o src/Lab1/dda.o $(CXXFLAGS)
+
+src/Lab1/bla.o: src/Lab1/bla.cpp
+	$(CPP) -c src/Lab1/bla.cpp -o src/Lab1/bla.o $(CXXFLAGS)
+
+src/main.o: src/main.cpp
+	$(CPP) -c src/main.cpp -o src/main.o $(CXXFLAGS)
+
+src/Lab2/mpc.o: src/Lab2/mpc.cpp
+	$(CPP) -c src/Lab2/mpc.cpp -o src/Lab2/mpc.o $(CXXFLAGS)
+
+src/Lab2/mpe.o: src/Lab2/mpe.cpp
+	$(CPP) -c src/Lab2/mpe.cpp -o src/Lab2/mpe.o $(CXXFLAGS)
+
+src/Lab2/concentric_circle.o: src/Lab2/concentric_circle.cpp
+	$(CPP) -c src/Lab2/concentric_circle.cpp -o src/Lab2/concentric_circle.o $(CXXFLAGS)
+
+src/Lab2/concentric_ellipse.o: src/Lab2/concentric_ellipse.cpp
+	$(CPP) -c src/Lab2/concentric_ellipse.cpp -o src/Lab2/concentric_ellipse.o $(CXXFLAGS)
+
+src/Extras/fourier.o: src/Extras/fourier.cpp
+	$(CPP) -c src/Extras/fourier.cpp -o src/Extras/fourier.o $(CXXFLAGS)
