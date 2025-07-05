@@ -1,5 +1,5 @@
 Materials for computer graphics lab<br><br>
-How to run in your pc :<br>
+How to run in your pc :<br><br>
     1. Download whole zip file.<br>
     2. Extract whole folder and open the folder.<br>
     3. Open "Basic Graphics.dev" file by double click.<br>
