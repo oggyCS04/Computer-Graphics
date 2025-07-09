@@ -10,7 +10,7 @@ mpe::mpe(){
 	float h,k,a,b,p0,xn,yn;
 	
 	printf("\n\nMidpoint Theorem for Ellipse\n");
-	printf("- Compiled by Prabesh Babu Adhikari\n\n");
+	printf("- Compiled by Sagar Gupta\n\n");
 
 	printf("Enter the center of ellipse (h,k)\n");
 	scanf("%f %f",&h,&k);

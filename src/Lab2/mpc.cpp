@@ -10,7 +10,7 @@ mpc::mpc(){
 	float h,k,r,p0,xn,yn;
 	
 	printf("\n\nMidpoint Theorem for Circle\n");
-	printf("- Compiled by Prabesh Babu Adhikari\n\n");
+	printf("- Compiled by Sagar Gupta\n\n");
 
 	printf("Enter the center of circle (h,k)\n");
 	scanf("%f %f",&h,&k);
