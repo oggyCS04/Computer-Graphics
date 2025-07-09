@@ -47,7 +47,7 @@ ConMpc::ConMpc(){
 		putpixel(-xn+h,-yn+k,colorsname[i]); // Octant-5
 		putpixel(xn+h,-yn+k,colorsname[i]); // Octant-6
 		putpixel(yn+h,-xn+k,colorsname[i]); // Octant-7
-		putpixel(yn+h,xn+h,colorsname[i]); // Octant-8
+		putpixel(yn+h,xn+k,colorsname[i]); // Octant-8
 		delay(10);
 		if(p0<0){
 			xn += 1;
