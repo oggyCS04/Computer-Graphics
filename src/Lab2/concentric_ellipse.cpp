@@ -3,7 +3,6 @@
 
 #include "con_mpe.h"
 #include <stdio.h>
-#include<iostream>
 #include <graphics.h>
 #include <math.h>
 

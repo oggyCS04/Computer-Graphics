@@ -2,7 +2,6 @@
 
 #include "mpc.h"
 #include <stdio.h>
-#include<iostream>
 #include <graphics.h>
 #include <math.h>
 
@@ -11,7 +10,7 @@ mpc::mpc(){
 	float h,k,r,p0,xn,yn;
 	
 	printf("\n\nMidpoint Theorem for Circle\n");
-	printf("- Compiled by Sagar Gupta\n\n");
+	printf("- Compiled by Prabesh Babu Adhikari\n\n");
 
 	printf("Enter the center of circle (h,k)\n");
 	scanf("%f %f",&h,&k);
@@ -26,7 +25,7 @@ mpc::mpc(){
 	
 	xn = 0;
 	yn = r;
-	printf("%f",p0);
+	printf("\n\n%f",p0);
 	
 	do{
 		putpixel(xn+h,yn+k,WHITE); // Octant-1

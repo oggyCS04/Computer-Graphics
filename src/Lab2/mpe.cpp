@@ -2,7 +2,6 @@
 
 #include "mpe.h"
 #include <stdio.h>
-#include<iostream>
 #include <graphics.h>
 #include <math.h>
 
@@ -11,7 +10,7 @@ mpe::mpe(){
 	float h,k,a,b,p0,xn,yn;
 	
 	printf("\n\nMidpoint Theorem for Ellipse\n");
-	printf("- Compiled by Sagar Gupta\n\n");
+	printf("- Compiled by Prabesh Babu Adhikari\n\n");
 
 	printf("Enter the center of ellipse (h,k)\n");
 	scanf("%f %f",&h,&k);
@@ -31,7 +30,7 @@ mpe::mpe(){
 	
 	xn = 0;
 	yn = b;
-	printf("%f",p0);
+	printf("\n\n%f",p0);
 	
 	do{
 		putpixel(xn+h,yn+k,WHITE); // Octant-1

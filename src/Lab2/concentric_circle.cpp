@@ -2,7 +2,6 @@
 
 #include "con_mpc.h"
 #include <stdio.h>
-#include<iostream>
 #include <graphics.h>
 #include <math.h>
 
