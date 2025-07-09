@@ -36,7 +36,7 @@ mpc::mpc(){
 		putpixel(-xn+h,-yn+k,WHITE); // Octant-5
 		putpixel(xn+h,-yn+k,WHITE); // Octant-6
 		putpixel(yn+h,-xn+k,WHITE); // Octant-7
-		putpixel(yn+h,xn+h,WHITE); // Octant-8
+		putpixel(yn+h,xn+k,WHITE); // Octant-8
 		delay(50);
 		if(p0<0){
 			xn += 1;
